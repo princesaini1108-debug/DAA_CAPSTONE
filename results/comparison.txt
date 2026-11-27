@@ -1,0 +1,12 @@
+
+Document 1 vs Document 2
+Naive: 0 matching sentences, Time: 0.00002530 seconds
+Rabin-Karp: 0 matching sentences, Time: 0.00002850 seconds
+KMP: 0 matching sentences, Time: 0.00003330 seconds
+
+Document 2 vs Document 1
+Naive: 0 matching sentences, Time: 0.00001090 seconds
+Rabin-Karp: 0 matching sentences, Time: 0.00004040 seconds
+KMP: 0 matching sentences, Time: 0.00003270 seconds
+
+Document Similarity: 33.33%
