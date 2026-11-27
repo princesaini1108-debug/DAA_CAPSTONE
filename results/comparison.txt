@@ -1,12 +1,47 @@
+PLAGIARISM DETECTION REPORT
+Document 1 Characters: 10
+Document 2 Characters: 6
+Document Similarity: 50.0%
 
-Document 1 vs Document 2
-Naive: 0 matching sentences, Time: 0.00002530 seconds
-Rabin-Karp: 0 matching sentences, Time: 0.00002850 seconds
-KMP: 0 matching sentences, Time: 0.00003330 seconds
+ALGORITHM: Naive
+Working: Checks the pattern at every possible position in the text.
+Best Case: O(n)
+Average Case: O(n*m)
+Worst Case: O(n*m)
+Space Complexity: O(1) auxiliary space
+Exact Matches: 1
+Total Time: 0.00278790 seconds
+Average Time: 0.00002788 seconds
+Document 2 -> Document 1: prince
 
-Document 2 vs Document 1
-Naive: 0 matching sentences, Time: 0.00001090 seconds
-Rabin-Karp: 0 matching sentences, Time: 0.00004040 seconds
-KMP: 0 matching sentences, Time: 0.00003270 seconds
+ALGORITHM: Rabin-Karp
+Working: Uses hashing and rolling hash to find pattern matches.
+Best Case: O(n+m)
+Average Case: O(n+m) expected
+Worst Case: O(n*m)
+Space Complexity: O(1) auxiliary space
+Exact Matches: 1
+Total Time: 0.00275380 seconds
+Average Time: 0.00002754 seconds
+Document 2 -> Document 1: prince
 
-Document Similarity: 33.33%
+ALGORITHM: KMP
+Working: Uses LPS (Longest Prefix Suffix) to avoid repeated comparisons.
+Best Case: O(n+m)
+Average Case: O(n+m)
+Worst Case: O(n+m)
+Space Complexity: O(m) for LPS array
+Exact Matches: 1
+Total Time: 0.00136230 seconds
+Average Time: 0.00001362 seconds
+Document 2 -> Document 1: prince
+
+Partial Matching Sentences: 1
+Partial Match: 50.0%
+Matched Words: ['prince']
+
+PERFORMANCE COMPARISON
+Naive: Total=0.00278790s, Average=0.00002788s
+Rabin-Karp: Total=0.00275380s, Average=0.00002754s
+KMP: Total=0.00136230s, Average=0.00001362s
+Fastest Algorithm: KMP
